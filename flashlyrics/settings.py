@@ -16,7 +16,7 @@ SECRET_KEY = 'SECRET KEY'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["http://flashlyrics.herokuapp.com"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
