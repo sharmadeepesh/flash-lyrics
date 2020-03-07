@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="masthead text-white">
+    <div class="masthead-content">
+      <div style="margin-top: -80px;" class="text-center container">
+        <h1 style="color:white;text-shadow:0px 0px 10px pink">{{name}} </h1>
+        <h3 style="color:white;text-shadow:0px 0px 10px pink">{{artist}} </h3>
+        <div style="width:100%" class="lyrics">
+        <pre style="color: white;font-size: 20px;text-shadow: 0px 0px 5px grey;">{{ lyrics }}</pre>
+        </div>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+    
+{% endblock content %}
+

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<form action="{% url 'lyric_added' name=name artist=artist %}">
+    <input type="text" name="lyrics" placeholder="Enter Lyrics">
+    <button class="btn btn-primary" type="submit">Add Lyrics</button>
+</form>
+{% endblock content %}

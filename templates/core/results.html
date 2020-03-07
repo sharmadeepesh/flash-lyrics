@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <!--SOMETHING HERRE-->
+        <div class="container">
+          <h2 style="margin:-40px 0px 30px 0px;display:block;text-shadow:0px 0px 5px black;">Search Results for "{{song_to_render}}"</h2>
+            <div class="row text-center">
+          {% for elem in results %}
+          <div class="col-md-3">
+          <div style="box-shadow:0px 0px 10px black;margin:5px;color:black;" class="card" style="width: 20rem;">
+            <a href="{% url 'lyrics' name=elem.0 artist=elem.1 %}">
+                <img class="card-img-top" src="{{elem.2}}" alt="Card image cap">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">{{elem.0}}</h5>
+              <p class="card-text">{{elem.1}}</p>
+              <a href="{% url 'lyrics' name=elem.0 artist=elem.1 %}" class="btn btn-primary">See Lyrics</a>
+            </div>
+          </div>
+        </div>
+          {% endfor %}
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+
+{% endblock content %}

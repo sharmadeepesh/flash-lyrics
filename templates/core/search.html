@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <h2 id="shadow" class="masthead-subheading mb-0">Search</h2>
+        <form style="margin-top: 15px;" method="POST">
+            {% csrf_token %}
+            <input class="form-control form-control-lg" type="text" name="song_name" placeholder="Enter song name" required=True>
+            <button style="margin-top: 20px;height: 60px;background-color: #ee0979;width: 186px;box-shadow: 0px 0px 21px black;color: white;border: 2px black;" action="{% url 'search' %}" type="submit" class="btn btn-primary">Search Song</button>
+        </form>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+  
+    
+{% endblock content %}

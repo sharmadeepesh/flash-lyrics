@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <h1 style="text-shadow:0px 0px 10px black;" id="shadow" class="masthead-heading mb-0">Get Song Lyrics</h1>
+        <h2 style="text-shadow:0px 0px 5px black;margin-top:20px;" id="shadow" class="masthead-subheading mb-0">In A ⚡.</h2>
+        <a href="{% url 'search' %}" class="btn btn-primary btn-xl rounded-pill mt-5">Search Lyrics</a>
+      </div>
+    </div>
+    <div class="bg-circle-1 bg-circle"></div>
+    <div class="bg-circle-2 bg-circle"></div>
+    <div class="bg-circle-3 bg-circle"></div>
+    <div class="bg-circle-4 bg-circle"></div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static 'img/01.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">For those about to rock...</h2>
+            <p>Music can raise someone's mood, get them excited, or make them calm and relaxed. Music also - and this is important - allows us to feel nearly or possibly all emotions that we experience in our lives. The possibilities are endless.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static 'img/02.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">We salute you!</h2>
+            <p>Studies show that listening to music can benefit overall well-being, help regulate emotions, and create happiness and relaxation in everyday life. Music-listening could boost mood and well-being and improve stress-related measures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="{% static 'img/03.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Let there be rock!</h2>
+            <p>The lyrics turn over and over in your head when you realize “this is EXACTLY how I’ve been feeling. This is everything that I needed to hear”.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock content %}
