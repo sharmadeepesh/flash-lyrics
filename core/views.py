@@ -10,8 +10,8 @@ import spotipy.util as util
 import urllib.parse
 import random
 
-client_id = "6315f27b26664ac5af1ff41d962458b8"
-client_secret = "2cd8131dbae54f19b96308160492db1a"
+client_id = "Your Spotify API ID"
+client_secret = "Your Spotify API Key"
 
 user_agent_list = [
    #Chrome
