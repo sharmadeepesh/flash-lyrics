@@ -11,12 +11,12 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'templates/')
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'SECRET KEY'
+SECRET_KEY = '$tjv!y*st*io#740-tj)cuhm4xr(&q%z$atfp9x2+d5ua-7&ys'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["http://flashlyrics.herokuapp.com"]
 
 
 # Application definition
